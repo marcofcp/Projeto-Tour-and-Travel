@@ -296,12 +296,12 @@ nav ul a:hover {
 
 /* Book Now Section */
 
-.book-now-container h1 {
+.book-now-container h2 {
   color: var(--orange);
   font-size: 2em;
   font-weight: bold;
 }
-.book-now-container h1 span {
+.book-now-container h2 span {
   background-color: var(--background-button);
   padding: 0.2em 0.4em;
   border-radius: 7px;
@@ -340,6 +340,69 @@ nav ul a:hover {
   background-color: var(--background-button);
   color: var(--orange);
 }
+
+/* Packages Section */
+
+.packages-container h2 {
+  color: var(--orange);
+  font-size: 2em;
+  font-weight: bold;
+}
+.packages-container h2 span {
+  background-color: var(--background-button);
+  padding: 0.2em 0.4em;
+  border-radius: 7px;
+}
+
+/* Pack Box Container */
+
+.package {
+  width: 25em;
+}
+.package-data-box {
+  padding: 1em;
+}
+.name {
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  padding-bottom: 0.3em;
+}
+.name i {
+  color: var(--orange);
+  padding-right: 0.3em;
+}
+.description {
+  color: rgb(100, 100, 100);
+  font-size: 1em;
+  font-weight: 400;
+  padding-bottom: 0.2em;
+}
+.rating {
+  color: var(--orange);
+  padding-bottom: 0.2em;
+}
+.price {
+  padding-bottom: 0.4em;
+}
+.price del {
+  color: rgb(100, 100, 100);
+  font-size: 0.8em;
+  padding-left: 0.2em;
+}
+.package-data-box button {
+  background-color: #ffa500;
+  color: white;
+  border: 2px solid var(--orange);
+  padding: 0.4em 1.5em;
+  font-size: 1em;
+  transition: 0.3s;
+}
+.package-data-box button:hover {
+  background-color: var(--background-button);
+  color: var(--orange);
+}
+
 
 
 
