@@ -107,8 +107,8 @@
                     <h3 class="text-uppercase text-center m-0">LOGIN</h3>
                     <form action="" id="form-login">
                         <div id="data-login-box">
-                            <input type="email" name="email" id="email" placeholder="enter your email">
-                            <input type="password" name="password" id="password" placeholder="enter your password">
+                            <input type="email" name="email" id="email" placeholder="enter your email" autocomplete="off">
+                            <input type="password" name="password" id="password" placeholder="enter your password" autocomplete="none">
                             <button type="submit" id="submit-button" class="text-capitalize">Login Now</button>
                         </div>
                         <div class="remember-me-box d-flex justify-content-start">
@@ -148,8 +148,8 @@
 
     <!-- Book Now Section -->
 
-    <section class="container-fluid book-now-container">
-        <h1 class="d-flex justify-content-center gap-4 py-4">
+    <section class="container book-now-container">
+        <h1 class="d-flex justify-content-center gap-4 py-5">
             <div class="book-box d-flex gap-1">
                 <span>B</span>
                 <span>O</span>
@@ -162,6 +162,35 @@
                 <span>W</span>
             </div>
         </h1>
+
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
+                <div class="image-book-box align-self-center">
+                    <img src="images/book-img.svg" alt="Book image" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center">
+                <form action="" name="form-book-now" id="form-book-now">
+                    <div class="where-to form-area">
+                        <label for="place-name" class="text-capitalize d-block">Where To</label>
+                        <input type="text" name="place-name" id="place-name" placeholder="place name">
+                    </div>
+                    <div class="how-many form-area">
+                        <label for="number-guest" class="text-capitalize d-block">How Many</label>
+                        <input type="text" name="number-guest" id="number-guest" placeholder="number of guests">
+                    </div>
+                    <div class="arrivals-box form-area">
+                        <label for="date-arrivals" class="text-capitalize d-block">Arrivals</label>
+                        <input type="date" name="date-arrivals" id="date-arrivals">
+                    </div>
+                    <div class="leaving-box form-area">
+                        <label for="date-leaving" class="text-capitalize d-block">Leaving</label>
+                        <input type="date" name="date-leaving" id="date-leaving">
+                    </div>
+                    <button type="submit" class="text-capitalize">Book Now</button>
+                </form>
+            </div>
+        </div>
     </section>
     
 

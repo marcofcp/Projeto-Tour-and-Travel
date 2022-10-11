@@ -200,6 +200,9 @@ nav ul a:hover {
   color: var(--dark);
   margin-bottom: 1em;
 }
+#data-login-box input:focus {
+  border: 1px solid var(--orange);
+}
 #data-login-box button {
   width: 100%;
   border: 2px solid var(--orange);
@@ -303,12 +306,47 @@ nav ul a:hover {
   padding: 0.2em 0.4em;
   border-radius: 7px;
 }
+.image-book-box {
+  width: 90%;
+}
+#form-book-now {
+  width: 90%;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  padding: 1.3em;
+}
+#form-book-now .form-area {
+  padding-bottom: 1.5em;
+}
+#form-book-now label {
+  color: rgb(95, 95, 95);
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-bottom: 0.4em;
+}
+#form-book-now input {
+  border: 1px solid #d9dbdc;
+  padding: 0.6em 0.7em;
+  width: 100%;
+}
+#form-book-now button {
+  background-color: #ffa500;
+  color: white;
+  border: 2px solid var(--orange);
+  padding: 0.4em 1.5em;
+  font-size: 1em;
+  transition: 0.3s;
+}
+#form-book-now button:hover {
+  background-color: var(--background-button);
+  color: var(--orange);
+}
 
 
 
 /* Media Queries - Responsive Format Website */
 
 @media screen and (max-width: 1210px) {
+
   .logo-box {
     font-size: 1.4em;
   }
@@ -318,6 +356,13 @@ nav ul a:hover {
   .search-login-box i {
     font-size: 1.3em;
   }
+  .book-now-container h1 {
+    font-size: 1.5em;
+  }
+  .book-now-container h1 span {
+    padding: 0.1em 0.2em;
+  }
+
 }
 
 @media screen and (max-width: 1060px) {
