@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --orange:#ffa500;
+  --soft-orange: #DEAD50;
+  --background-button: #FFEDCC;
+  --light-gray: #A2A5A6;
+  --dark: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    transition: all 0.1s;
+}
+
+header {
+  background-color: var(--dark);
+  position: fixed;
+  z-index: 1;
+}
+.header-box-content {
+  color: white;
+  padding: 1.2em 9em;
+}
+.logo-box {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+  /* Hambruger-box */
+
+.hamburger-main-box {
+  display: none;
+}
+.hamburger-box {
+  padding: 0.3em 0.7em;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.hamburger-box i {
+  font-size: 1.7em;
+}
+
+  /* Close Hamburger Menu Button */
+
+.hamburger-close-box {
+  display: none;
+}
+.hamburger-close-box.show {
+  display: block;
+}
+.close-box {
+  padding: 0.3em 0.7em;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.close-box i {
+  font-size: 1.7em;
+}
+
+.logo-box a {
+  color: white;
+  text-decoration: none;
+}
+.logo-box span {
+  color: var(--orange);
+}
+
+  /* Nav Menu */
+
+nav ul li {
+  list-style-type: none;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+nav ul a:hover {
+  color: var(--orange);
+}
+
+  /* Hamburger Menu - Hidden */
+
+.hamburger-main-box {
+  position: absolute;
+  top: -120%;
+  left: 2%;
+}
+.hamburger-menu-box {
+  border-top: 1px solid var(--light-gray);
+  display: none;
+}
+.hamburger-menu-box a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(32, 32, 32);
+  padding: 1em;
+  margin: 1em 0;
+  transition: 0.3s;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+.hamburger-menu-box a:hover {
+  color: var(--orange);
+}
+
+  /* Search / User Login Icons */
+
+.search-login-box i {
+  font-size: 1.6em;
+}
+.search-login-box a {
+  color: white;
+  text-decoration: none;
+}
+.search-login-box a:hover {
+  color: var(--orange);
+}
+#close-btn {
+  display: none;
+}
+
+/* Form-Search - Hidden */
+
+#form-main-box {
+  display: none;
+}
+#formulario-search {
+  padding: 0.9em 0.8em;
+  display: flex;
+  align-items: center;
+}
+#formulario-search input {
+  width: 100%;
+  border: none;
+  padding: 0.6em 1em;
+  border-radius: 5px;
+  outline: none;
+  color: var(--dark);
+}
+#formulario-search i {
+  color: white;
+  font-size: 2em;
+}
+#formulario-search label {
+  margin-left: 1em;
+  cursor: pointer;
+}
+#formulario-search i:hover {
+  color: var(--orange);
+}
+
+/* Login Content Modal */
+
+.main-modal-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#modal-close-btn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.7em;
+  color: white;
+  font-size: 3em;
+  cursor: pointer;
+}
+.login-modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.7);
+  z-index: 1000;
+}
+.login-box {
+  background-color: white;
+  max-width: 28em;
+  padding: 1em;
+  border-radius: 5px;
+}
+.login-box h3 {
+  color: var(--dark);
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.5em 0;
+}
+#data-login-box input {
+  width: 100%;
+  padding: 0.6em;
+  border: 1px solid var(--light-gray);
+  outline: none;
+  color: var(--dark);
+  margin-bottom: 1em;
+}
+#data-login-box button {
+  width: 100%;
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+  color: white;
+  font-size: 1.1em;
+  padding: 0.5em 0;
+  transition: 0.3s;
+}
+#data-login-box button:hover {
+  background-color: var(--background-button);
+  color: var(--soft-orange);
+  color: var(--soft-orange);
+}
+.remember-me-box label {
+  padding-left: 0.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+#form-login p {
+  color: rgb(119, 119, 119);
+}
+#form-login span {
+  color: var(--orange);
+}
+
+/* Video Slide Content */
+
+.video-content-box {
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+.data-titles {
+  color: white;
+}
+.data-titles h1 {
+  font-weight: 700;
+  font-size: 3em;
+}
+.data-titles p {
+  font-size: 1.6em;
+  padding-bottom: 0.5em;
+}
+.data-titles a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--orange);
+  padding: 0.7em 2em;
+  border: 2px solid var(--orange);
+  transition: 0.3s;
+}
+.data-titles a:hover {
+  background-color: #ffa60043;
+  color: var(--orange);
+}
+
+.controls {
+  position: absolute;
+  top: 37em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.64);
+  display: flex;
+  gap: 5px;
+  padding: 0.5em 1em;
+  border-radius: 30px;
+}
+.controls .vid-btn {
+  width: 1.3em;
+  height: 1.3em;
+  display: inline-block;
+  border-radius: 50%;
+  background:#fff;
+  cursor: pointer;
+  margin: 0.2em;
+}
+
+.controls .vid-btn.active {
+  background-color: var(--orange);
+}
+
+/* Book Now Section */
+
+.book-now-container h1 {
+  color: var(--orange);
+  font-size: 2em;
+  font-weight: bold;
+}
+.book-now-container h1 span {
+  background-color: var(--background-button);
+  padding: 0.2em 0.4em;
+  border-radius: 7px;
+}
+
+
+
+/* Media Queries - Responsive Format Website */
+
+@media screen and (max-width: 1210px) {
+  .logo-box {
+    font-size: 1.4em;
+  }
+  nav ul a {
+    font-size: 1em;
+  }
+  .search-login-box i {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .header-box-content {
+    padding: 1.2em 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .hamburger-main-box {
+    display: block;
+    top: 20%;
+  }
+  nav {
+    display: none;
+  }
+  .logo-box {
+    margin: auto;
+  }
+}

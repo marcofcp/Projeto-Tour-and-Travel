@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/cd1e7d262f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    
+    <!-- Header Section -->
+
+    <header class="container-fluid">
+
+        <div class="header-box-content d-flex justify-content-between">
+
+           <!-- Hamburger Box - Left Top Corner -->
+
+            <div class="hamburger-main-box" id="hamburger-main-box">
+                <div class="hamburger-box d-flex justify-content-center">
+                    <i class="fa fa-bars align-self-center" aria-hidden="true"></i>
+                </div>
+            </div>
+
+                <!-- Close Hamburger Menu Button -->
+
+            <div class="hamburger-close-box" id="hamburger-close-box">
+                <div class="close-box d-flex justify-content-center">
+                    <i class="fa fa-times text-white" id="close-menu" aria-hidden="true"></i>
+                </div>
+            </div>
+                <!-- ///////// Close Hamburger Menu Button -->
+
+            <!-- ///////// Hamburger Box - Left Top Corner -->
+
+            <div class="logo-box">
+                <p class="text-uppercase m-0"><a href=""><span>t</span>ravel</a></p>
+            </div>
+            <nav>
+                <ul class="d-flex gap-4 m-0">
+                    <a href="#">
+                        <li class="text-capitalize">home</li>
+                    </a>
+                    <a href="#">
+                        <li class="text-capitalize">book</li>
+                    </a>
+                    <a href="#">
+                        <li class="text-capitalize">packages</li>
+                    </a>
+                    <a href="#">
+                        <li class="text-capitalize">services</li>
+                    </a>
+                    <a href="#">
+                        <li class="text-capitalize">gallery</li>
+                    </a>
+                    <a href="#">
+                        <li class="text-capitalize">review</li>
+                    </a>
+                    <a href="#">
+                        <li class="text-capitalize">contact</li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="search-login-box d-flex gap-lg-4 gap-2 justify-content-center">
+                <a href="" class="my-auto"><i class="fa fa-search" id="search-btn" aria-hidden="true"></i></a>
+                <a href="" class="my-auto"><i class="fa fa-times" id="close-btn" aria-hidden="true"></i></a>
+                <a href="" class="my-auto"><i class="fa fa-user" id="user-btn" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <!-- Hamburger Menu - Hidden -->
+
+        <div class="container-fluid hamburger-menu-box">
+            <a href="#">Home</a>
+            <a href="#">Book</a>
+            <a href="#">Packages</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Review</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- ///////// Hamburger Menu - Hidden -->
+
+        <!-- Form Search Box - Large Screens Hidden -->
+
+        <div id="form-main-box" class="inactive">
+            <form action="" name="formulario-search" id="formulario-search">
+                <input type="text" name="search" id="search" placeholder="search here...">
+                <label for="search"><i class="fa fa-search" aria-hidden="true"></i></label>
+            </form>
+        </div>
+        <!-- ///////// Form Search Box - Large Screens Hidden -->
+
+        <!-- Login Content Modal -->
+
+        <div class="main-modal-box" id="main-modal-box">
+
+            <i class="fa fa-times" id="modal-close-btn" aria-hidden="true"></i>
+
+            <div class="login-modal d-flex justify-content-center">
+                <div class="login-box align-self-center">
+                    <h3 class="text-uppercase text-center m-0">LOGIN</h3>
+                    <form action="" id="form-login">
+                        <div id="data-login-box">
+                            <input type="email" name="email" id="email" placeholder="enter your email">
+                            <input type="password" name="password" id="password" placeholder="enter your password">
+                            <button type="submit" id="submit-button" class="text-capitalize">Login Now</button>
+                        </div>
+                        <div class="remember-me-box d-flex justify-content-start">
+                            <input type="checkbox" name="remember-me" id="remember-me">
+                            <label for="remember-me" class="text-capitalize">Remember Me</label>
+                        </div>
+                        <p class="text-capitalize">Forget Password? <span>Click Here</span></p>
+                        <p class="text-capitalize">Don't Have An Account? <span>Register Now</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Video Slide Content -->
+
+    <div class="container-fluid video-content-box d-flex justify-content-center">
+        <div class="data-titles align-self-center text-center">
+            <h1 class="text-uppercase">adventure is worthwhile</h1>
+            <p class="text-capitalize">Dicover New Places With Us, Adventure Awaits</p>
+            <a href="#" class="text-capitalize">discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </div>
+
+    <!-- Book Now Section -->
+
+    <section class="container-fluid book-now-container">
+        <h1 class="d-flex justify-content-center gap-4 py-4">
+            <div class="book-box d-flex gap-1">
+                <span>B</span>
+                <span>O</span>
+                <span>O</span>
+                <span>K</span>
+            </div>
+            <div class="now-box d-flex gap-1">
+                <span>N</span>
+                <span>O</span>
+                <span>W</span>
+            </div>
+        </h1>
+    </section>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
