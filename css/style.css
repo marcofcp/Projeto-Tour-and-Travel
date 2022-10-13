@@ -669,10 +669,10 @@ footer {
   .search-login-box i {
     font-size: 1.3em;
   }
-  .book-now-container h2 {
+  .span-letters h2 {
     font-size: 1.5em;
   }
-  .book-now-container h2 span {
+  .span-letters h2 span {
     padding: 0.1em 0.2em;
   }
   .name-email input, .number-subject input {
