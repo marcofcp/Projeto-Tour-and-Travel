@@ -491,7 +491,7 @@
 
     <!-- Review Section -->
 
-    <section class="container review-container">
+    <section class="container review-container pb-5">
         <h2 class="d-flex justify-content-center py-5">
             <div class="review-title-box d-flex gap-1">
                 <span>R</span>
@@ -568,6 +568,45 @@
 
             </div>
 
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="container-fluid contact-container">
+        <h2 class="d-flex justify-content-center py-5">
+            <div class="contact-title-box d-flex gap-1">
+                <span>C</span>
+                <span>O</span>
+                <span>N</span>
+                <span>T</span>
+                <span>A</span>
+                <span>C</span>
+                <span>T</span>
+            </div>
+        </h2>
+        
+        <div class="row">
+            <div class="col-md-5">
+                <div class="contact-image-box">
+                    <img src="images/contact-img.svg" alt="Contact" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-7 d-flex p-0 justify-content-lg-start justify-content-center flex-wrap gap-3">
+                <form action="" id="formulario" name="formulario">
+                    <div class="name-email d-flex justify-content-between flex-wrap pb-4">
+                        <input type="text" id="contact-name" placeholder="name">
+                        <input type="text" id="contact-email" placeholder="email">
+                    </div>
+                    <div class="number-subject d-flex justify-content-between flex-wrap pb-4">
+                        <input type="number" id="contact-number" placeholder="number">
+                        <input type="text" id="contact-subject" placeholder="subject">
+                    </div>
+                    <textarea name="contact-mesage" id="contact-message" rows="10" placeholder="message"></textarea><br>
+                    <button type="submit" id="contact-button" class="text-capitalize">Send Message</button>
+                </form>
+            </div>
         </div>
 
     </section>

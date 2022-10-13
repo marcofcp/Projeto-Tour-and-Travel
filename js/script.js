@@ -71,7 +71,7 @@ const swiper = new Swiper('.swiper', {
         delay: 2500,
         disableOnInteraction: false,
     },
-    spaceBetween: 20,
+    spaceBetween: 30,
     slidesPerView: 3,
     centerSlides: true,
     grabCursor: true,

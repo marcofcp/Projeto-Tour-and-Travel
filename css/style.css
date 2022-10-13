@@ -531,9 +531,9 @@ nav ul a:hover {
 /* Sweeper Slide */
 
 .swiper-slide {
-  width: 15em;
-  box-shadow: 2px 2px 15px rgb(198, 198, 198);
+  box-shadow: 2px 2px 15px rgba(198, 198, 198, 0.566);
   cursor: grab;
+  border-radius: 5px;
 }
 .slide-image-box {
   width: 8em;
@@ -559,6 +559,53 @@ nav ul a:hover {
   color: var(--orange);
 }
 
+/* Contact Section */
+
+.contact-container h2 {
+  color: var(--orange);
+  font-size: 2em;
+  font-weight: bold;
+}
+.contact-container h2 span {
+  background-color: var(--background-button);
+  padding: 0.2em 0.4em;
+  border-radius: 7px;
+}
+.contact-container form {
+  width: 90%;
+  padding: 1.5em;
+  box-shadow: 2px 2px 15px rgb(198, 198, 198);
+}
+.name-email input, .number-subject input {
+  width: 48%;
+  border: none;
+  padding: 0.8em 1em;
+  background-color: #f4f5f7;
+  outline: none;
+}
+.contact-container form textarea {
+  width: 100%;
+  background-color: #f4f5f7;
+  border: none;
+  outline: none;
+  padding: 0.8em 1em;
+}
+.contact-container form button {
+  background-color: #ffa500;
+  color: white;
+  border: 2px solid var(--orange);
+  padding: 0.4em 1.5em;
+  font-size: 1em;
+  transition: 0.3s;
+}
+.contact-container form button:hover {
+  background-color: var(--background-button);
+  color: var(--orange);
+}
+.contact-container form textarea {
+  margin-bottom: 1.2em;
+}
+
 
 
 
@@ -580,6 +627,12 @@ nav ul a:hover {
   }
   .book-now-container h2 span {
     padding: 0.1em 0.2em;
+  }
+  .name-email input, .number-subject input {
+    width: 100%;
+  }
+  #contact-name, #contact-number {
+    margin-bottom: 1.5em;
   }
 
 }
@@ -605,6 +658,10 @@ nav ul a:hover {
     height: 23em;
     width: 23em;
     margin-bottom: 0.5em;
+  }
+  .contact-image-box {
+    width: 30em;
+    margin: auto;
   }
 
 }
