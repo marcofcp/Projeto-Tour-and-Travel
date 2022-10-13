@@ -55,22 +55,22 @@
                     <a href="#">
                         <li class="text-capitalize">home</li>
                     </a>
-                    <a href="#">
+                    <a href="#book-now-container">
                         <li class="text-capitalize">book</li>
                     </a>
-                    <a href="#">
+                    <a href="#packages-container">
                         <li class="text-capitalize">packages</li>
                     </a>
-                    <a href="#">
+                    <a href="#services-container">
                         <li class="text-capitalize">services</li>
                     </a>
-                    <a href="#">
+                    <a href="#gallery-container">
                         <li class="text-capitalize">gallery</li>
                     </a>
-                    <a href="#">
+                    <a href="#review-container">
                         <li class="text-capitalize">review</li>
                     </a>
-                    <a href="#">
+                    <a href="#contact-container">
                         <li class="text-capitalize">contact</li>
                     </a>
                 </ul>
@@ -158,7 +158,7 @@
 
     <!-- Book Now Section -->
 
-    <section class="container book-now-container">
+    <section class="container book-now-container pt-5" id="book-now-container">
         <h2 class="d-flex justify-content-center gap-4 py-5">
             <div class="book-box d-flex gap-1">
                 <span>B</span>
@@ -205,7 +205,7 @@
 
     <!-- Packages Section -->
 
-    <section class="container-fluid packages-container py-lg-5 py-3">
+    <section class="container-fluid packages-container py-lg-5 py-3" id="packages-container">
         <h2 class="d-flex justify-content-center py-5">
             <div class="packages-title-box d-flex gap-1">
                 <span>P</span>
@@ -313,7 +313,7 @@
     
     <!-- Services Section -->
 
-    <section class="container services-container">
+    <section class="container services-container pt-5" id="services-container">
         <h2 class="d-flex justify-content-center py-5">
             <div class="services-title-box d-flex gap-1">
                 <span>S</span>
@@ -375,7 +375,7 @@
 
     <!-- Gallery Section -->
 
-    <section class="container gallery-container mb-5">
+    <section class="container gallery-container mb-5 pt-5" id="gallery-container">
         <h2 class="d-flex justify-content-center py-5">
             <div class="gallery-title-box d-flex gap-1">
                 <span>G</span>
@@ -491,7 +491,7 @@
 
     <!-- Review Section -->
 
-    <section class="container review-container pb-5">
+    <section class="container review-container pb-5 pt-5" id="review-container">
         <h2 class="d-flex justify-content-center py-5">
             <div class="review-title-box d-flex gap-1">
                 <span>R</span>
@@ -505,11 +505,11 @@
 
         <!-- Slider main container -->
         
-        <div class="swiper">
+        <div class="swiper-review">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-                <div class="swiper-slide p-3 text-center">
+                <div class="swiper-slide swiper-slide-review p-3 text-center">
                     <div class="slide-image-box mx-auto">
                         <img src="images/pic1.png" alt="John Doe" class="img-fluid">
                     </div>
@@ -523,7 +523,7 @@
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                     </p>
                 </div>
-                <div class="swiper-slide p-3 text-center">
+                <div class="swiper-slide swiper-slide-review p-3 text-center">
                     <div class="slide-image-box mx-auto">
                         <img src="images/pic2.png" alt="John Doe" class="img-fluid">
                     </div>
@@ -537,7 +537,7 @@
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                     </p>
                 </div>
-                <div class="swiper-slide p-3 text-center">
+                <div class="swiper-slide swiper-slide-review p-3 text-center">
                     <div class="slide-image-box mx-auto">
                         <img src="images/pic3.png" alt="John Doe" class="img-fluid">
                     </div>
@@ -551,7 +551,7 @@
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                     </p>
                 </div>
-                <div class="swiper-slide p-3 text-center">
+                <div class="swiper-slide swiper-slide-review p-3 text-center">
                     <div class="slide-image-box mx-auto">
                         <img src="images/pic4.png" alt="John Doe" class="img-fluid">
                     </div>
@@ -574,7 +574,7 @@
 
     <!-- Contact Section -->
 
-    <section class="container-fluid contact-container">
+    <section class="container-fluid contact-container pb-5 pt-5" id="contact-container">
         <h2 class="d-flex justify-content-center py-5">
             <div class="contact-title-box d-flex gap-1">
                 <span>C</span>
@@ -610,6 +610,86 @@
         </div>
 
     </section>
+
+    <!-- Brands swiper section -->
+
+    <section class="container-fluid brands-container py-5">
+
+        <!-- Slider main container -->
+        <div class="swiper-brands">
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/1.jpg" alt="HappyHD">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/2.jpg" alt="Vintage">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/3.jpg" alt="Umbrella">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/4.jpg" alt="Panda">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/5.jpg" alt="Lackmann">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/6.jpg" alt="Elibrary">
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="container-fluid p-0 pt-5 pb-4">
+        <section class="container footer-box p-0 d-flex flex-wrap justify-content-evenly">
+                <div class="about-us footer-box-item">
+                    <h3 class="text-capitalize about-title">About Us</h3>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Assumenda Quas Magni Pariatur Est Accusantium Voluptas Enim Nemo Facilis Sit Debitis.</p>
+                </div>
+                <div class="branch-locations footer-box-item">
+                    <h3 class="text-capitalize text-capitalize">Branch Locations</h3>
+                    <ul class="p-0">
+                        <li class="text-capitalize"><a href="#">India</a></li>
+                        <li class="text-uppercase"><a href="#">USA</a></li>
+                        <li class="text-capitalize"><a href="#">Japan</a></li>
+                        <li class="text-capitalize"><a href="#">France</a></li>
+                    </ul>
+                </div>
+                <div class="quick-links footer-box-item">
+                    <h3 class="text-capitalize">Quick Links</h3>
+                    <ul class="p-0">
+                        <li class="text-capitalize"><a href="#">Home</a></li>
+                        <li class="text-capitalize"><a href="#book-now-container">Book</a></li>
+                        <li class="text-capitalize"><a href="#packages-container">Packages</a></li>
+                        <li class="text-capitalize"><a href="#services-container">Services</a></li>
+                        <li class="text-capitalize"><a href="#gallery-container">Gallery</a></li>
+                        <li class="text-capitalize"><a href="#review-container">Review</a></li>
+                        <li class="text-capitalize"><a href="#contact-container">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="follow-us footer-box-item">
+                    <h3 class="text-capitalize">Follow Us</h3>
+                    <ul class="p-0">
+                        <li class="text-capitalize"><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                        <li class="text-capitalize"><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                        <li class="text-capitalize"><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                        <li class="text-capitalize"><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
+                    </ul>
+                </div>
+        </section>
+
+        <section class="container copyrights pt-4">
+            <p class="text-capitalize text-center">Created By <span>Marco Pereira - Web Developer</span> | All Rights Reserved</p>
+        </section>
+    </footer>
 
 
 

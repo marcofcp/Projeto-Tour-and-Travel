@@ -517,6 +517,9 @@ nav ul a:hover {
 
 /* Review Section */
 
+.review-container {
+  overflow: hidden;
+}
 .review-container h2 {
   color: var(--orange);
   font-size: 2em;
@@ -530,7 +533,7 @@ nav ul a:hover {
 
 /* Sweeper Slide */
 
-.swiper-slide {
+.swiper-slide-review {
   box-shadow: 2px 2px 15px rgba(198, 198, 198, 0.566);
   cursor: grab;
   border-radius: 5px;
@@ -606,6 +609,50 @@ nav ul a:hover {
   margin-bottom: 1.2em;
 }
 
+/* Brands swiper section */
+
+.brands-container {
+  overflow: hidden;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--dark);
+  color: white;
+}
+.footer-box-item {
+  width: 25%;
+  padding: 0 1em;
+}
+.footer-box-item h3 {
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+.footer-box-item ul li {
+  list-style-type: none;
+}
+.footer-box-item ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  line-height: 2.5em;
+}
+.footer-box-item ul li a:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+/* Copyrights Section */
+
+.copyrights {
+  font-size: 1.5em;
+  border-top: 1px solid var(--light-gray);
+}
+.copyrights span {
+  color: var(--orange);
+}
+
 
 
 
@@ -641,6 +688,10 @@ nav ul a:hover {
   .header-box-content {
     padding: 1.2em 0;
   }
+  .footer-box-item {
+    width: 50%;
+    padding-bottom: 1em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -660,8 +711,11 @@ nav ul a:hover {
     margin-bottom: 0.5em;
   }
   .contact-image-box {
-    width: 30em;
+    width: 25em;
     margin: auto;
+  }
+  .footer-box-item {
+    width: 100%;
   }
 
 }

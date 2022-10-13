@@ -64,7 +64,7 @@ videoBtn.forEach(btn =>{
 
 /* Review - Sweeper JS */
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-review', {
     speed: 400,
     loop:true,
     autoplay: {
@@ -84,6 +84,30 @@ const swiper = new Swiper('.swiper', {
         },
         1024: {
           slidesPerView: 3,
+        },
+    },
+});
+
+const swiperBrands = new Swiper('.swiper-brands', {
+    speed: 400,
+    loop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    spaceBetween: 10,
+    slidesPerView: 6,
+    centerSlides: true,
+    grabCursor: true,
+    breakpoints: {
+        340: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 6,
         },
     },
 });
