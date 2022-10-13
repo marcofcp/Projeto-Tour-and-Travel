@@ -16,11 +16,15 @@
     font-family: "Nunito", sans-serif;
     transition: all 0.1s;
 }
+*::selection{
+  background:var(--orange);
+  color:#fff;
+}
 
 header {
   background-color: var(--dark);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 .header-box-content {
   color: white;
@@ -358,6 +362,7 @@ nav ul a:hover {
 
 .package {
   width: 25em;
+  box-shadow: 1px 1px 20px rgba(182, 182, 182, 0.541);
 }
 .package-data-box {
   padding: 1em;
@@ -403,6 +408,157 @@ nav ul a:hover {
   color: var(--orange);
 }
 
+/* Services Section */
+
+.services-container h2 {
+  color: var(--orange);
+  font-size: 2em;
+  font-weight: bold;
+}
+.services-container h2 span {
+  background-color: var(--background-button);
+  padding: 0.2em 0.4em;
+  border-radius: 7px;
+}
+
+/* Services Section */
+
+.service {
+  width: 20em;
+  padding: 0.4em;
+  margin-bottom: 2em;
+}
+.service:hover {
+  box-shadow: 1px 2px 15px rgb(222, 222, 222);
+}
+.service i {
+  font-size: 3.5em;
+  color: var(--orange);
+}
+.service-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.service-image-box, .service-name {
+  padding-bottom: 0.8em;
+}
+.service-description {
+  color: rgb(100, 100, 100);
+  line-height: 1.4em;
+  font-size: 0.9em;
+}
+
+/* Gallery Section */
+
+.gallery-container h2 {
+  color: var(--orange);
+  font-size: 2em;
+  font-weight: bold;
+}
+.gallery-container h2 span {
+  background-color: var(--background-button);
+  padding: 0.2em 0.4em;
+  border-radius: 7px;
+}
+.gallery-item {
+  height: 19em;
+  width: 19em;
+  border: 0.4em solid white;
+  box-shadow: 2px 2px 15px rgb(198, 198, 198);
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.3em;
+}
+.item-9 {
+  width: 100%;
+}
+.gallery-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+      /* Gallery Item :Hover */
+
+
+.gallery-item-hover {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(49, 49, 49, 0.738);
+  transition: 0.3s;
+}
+.gallery-item:hover .gallery-item-hover {
+  top: 0;
+}
+.gallery-item-name {
+  color: var(--orange);
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 0.2em;
+}
+.gallery-hover-description {
+  padding-bottom: 0.4em;
+}
+.gallery-item-hover button {
+  background-color: #ffa500;
+  color: white;
+  border: 2px solid var(--orange);
+  padding: 0.4em 1.5em;
+  font-size: 1em;
+  transition: 0.3s;
+}
+.gallery-item-hover button:hover {
+  background-color: var(--background-button);
+  color: var(--orange);
+}
+
+/* Review Section */
+
+.review-container h2 {
+  color: var(--orange);
+  font-size: 2em;
+  font-weight: bold;
+}
+.review-container h2 span {
+  background-color: var(--background-button);
+  padding: 0.2em 0.4em;
+  border-radius: 7px;
+}
+
+/* Sweeper Slide */
+
+.swiper-slide {
+  width: 15em;
+  box-shadow: 2px 2px 15px rgb(198, 198, 198);
+  cursor: grab;
+}
+.slide-image-box {
+  width: 8em;
+  height: 8em;
+}
+.slide-image-box img {
+  border-radius: 100%;
+  object-fit: cover;
+}
+.slide-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0.3em 0;
+}
+.slide-description {
+  color: rgb(100, 100, 100);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.3em;
+  padding-bottom: 0.5em;
+}
+.rating-slide {
+  color: var(--orange);
+}
+
 
 
 
@@ -419,10 +575,10 @@ nav ul a:hover {
   .search-login-box i {
     font-size: 1.3em;
   }
-  .book-now-container h1 {
+  .book-now-container h2 {
     font-size: 1.5em;
   }
-  .book-now-container h1 span {
+  .book-now-container h2 span {
     padding: 0.1em 0.2em;
   }
 
@@ -434,7 +590,7 @@ nav ul a:hover {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .hamburger-main-box {
     display: block;
     top: 20%;
@@ -445,4 +601,10 @@ nav ul a:hover {
   .logo-box {
     margin: auto;
   }
+  .gallery-item {
+    height: 23em;
+    width: 23em;
+    margin-bottom: 0.5em;
+  }
+
 }

@@ -62,3 +62,28 @@ videoBtn.forEach(btn =>{
     });
 });
 
+/* Review - Sweeper JS */
+
+const swiper = new Swiper('.swiper', {
+    speed: 400,
+    loop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    spaceBetween: 20,
+    slidesPerView: 3,
+    centerSlides: true,
+    grabCursor: true,
+    breakpoints: {
+        340: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+    },
+});
